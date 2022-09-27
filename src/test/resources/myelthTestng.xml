@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.myelth.tests.HomePageTest"/>
+      <class name="com.myelth.tests.PrivacyPolicyPageTest"/>
+      <class name="com.myelth.tests.ProviderPageTest"/>
+      <class name="com.myelth.tests.EmployerPageTest"/>
+      <class name="com.myelth.tests.Footer_HomePageTest"/>
+      <class name="com.myelth.tests.TermsAndConditionsPageTest"/>
+      <class name="com.myelth.tests.TermsOfServicePageTest"/>
+      <class name="com.myelth.tests.PlatformPageTest"/>
+      <class name="com.myelth.tests.FaqsPageTest"/>
+      <class name="com.myelth.tests.BlogPageTest"/>
+      <class name="com.myelth.tests.NewsPageTest"/>
+      <class name="com.myelth.tests.PayersPageTest"/>
+      <class name="com.myelth.tests.AboutUsPageTest"/>
+      <class name="com.myelth.tests.ContactUsPageTest"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

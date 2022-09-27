@@ -1,0 +1,1157 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>98/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 27 19:05:53 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2677 seconds (2677331 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myelth.tests.TermsAndConditionsPageTest.imageTest()'><b>imageTest</b><br>Test class: com.myelth.tests.TermsAndConditionsPageTest</td>
+<td><div><pre>java.lang.AssertionError: Image is not displayed expected [true] but found [false]
+	at com.myelth.tests.TermsAndConditionsPageTest.imageTest(TermsAndConditionsPageTest.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace666830255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace666830255'><pre>java.lang.AssertionError: Image is not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at com.myelth.tests.TermsAndConditionsPageTest.imageTest(TermsAndConditionsPageTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.myelth.tests.TermsAndConditionsPageTest@1c1bbc4e</td></tr>
+<tr>
+<td title='com.myelth.tests.TermsOfServicePageTest.termsOfServicePageTitleTest()'><b>termsOfServicePageTitleTest</b><br>Test class: com.myelth.tests.TermsOfServicePageTest</td>
+<td><div><pre>java.lang.AssertionError: 404 Not Found expected [Terms of Service | myelth] but found [404 Not Found | myelth]
+	at com.myelth.tests.TermsOfServicePageTest.termsOfServicePageTitleTest(TermsOfServicePageTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1667557396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1667557396'><pre>java.lang.AssertionError: 404 Not Found expected [Terms of Service | myelth] but found [404 Not Found | myelth]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.myelth.tests.TermsOfServicePageTest.termsOfServicePageTitleTest(TermsOfServicePageTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.myelth.tests.TermsOfServicePageTest@55fe41ea</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.arrowNextTest()'><b>arrowNextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td><div><pre>java.lang.AssertionError: not displayed expected [true] but found [false]
+	at com.myelth.tests.HomePageTest.arrowNextTest(HomePageTest.java:649)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769597368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769597368'><pre>java.lang.AssertionError: not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at com.myelth.tests.HomePageTest.arrowNextTest(HomePageTest.java:649)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PrivacyPolicyPageTest.termsOfServicePageTitleTest()'><b>termsOfServicePageTitleTest</b><br>Test class: com.myelth.tests.PrivacyPolicyPageTest</td>
+<td><div><pre>java.lang.AssertionError: 404 Not Found expected [Terms of Service | myelth] but found [Privacy Policy | myelth]
+	at com.myelth.tests.PrivacyPolicyPageTest.termsOfServicePageTitleTest(PrivacyPolicyPageTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1341257842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1341257842'><pre>java.lang.AssertionError: 404 Not Found expected [Terms of Service | myelth] but found [Privacy Policy | myelth]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.myelth.tests.PrivacyPolicyPageTest.termsOfServicePageTitleTest(PrivacyPolicyPageTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>7</td>
+<td>com.myelth.tests.PrivacyPolicyPageTest@2cd76f31</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.instagramTest()'><b>instagramTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [MyElth | Instagram] but found [myelth | healthtech with a consumer focus]
+	at com.myelth.tests.HomePageTest.instagramTest(HomePageTest.java:606)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1390601254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1390601254'><pre>java.lang.AssertionError: expected [MyElth | Instagram] but found [myelth | healthtech with a consumer focus]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.myelth.tests.HomePageTest.instagramTest(HomePageTest.java:606)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.arrowPreviousTest()'><b>arrowPreviousTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td><div><pre>java.lang.AssertionError: not displayed expected [true] but found [false]
+	at com.myelth.tests.HomePageTest.arrowPreviousTest(HomePageTest.java:633)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace655374118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace655374118'><pre>java.lang.AssertionError: not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at com.myelth.tests.HomePageTest.arrowPreviousTest(HomePageTest.java:633)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.NewsPageTest.howTheCompanyWasFoundedLink()'><b>howTheCompanyWasFoundedLink</b><br>Test class: com.myelth.tests.NewsPageTest</td>
+<td><div><pre>java.lang.AssertionError: Website is not currently available in your region or country expected [How Myelth company was founded] but found [here]
+	at com.myelth.tests.NewsPageTest.howTheCompanyWasFoundedLink(NewsPageTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace321431006", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace321431006'><pre>java.lang.AssertionError: Website is not currently available in your region or country expected [How Myelth company was founded] but found [here]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.myelth.tests.NewsPageTest.howTheCompanyWasFoundedLink(NewsPageTest.java:68)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>com.myelth.tests.NewsPageTest@7a8c8dcf</td></tr>
+<tr>
+<td title='com.myelth.tests.NewsPageTest.healthCareSolutionProviderLogoLinkTest()'><b>healthCareSolutionProviderLogoLinkTest</b><br>Test class: com.myelth.tests.NewsPageTest</td>
+<td><div><pre>java.lang.AssertionError: Website is not currently available in your region or country expected [Myelth Top Healthcare Communicatins Solution Providers] but found [Website is not currently available in your region or country]
+	at com.myelth.tests.NewsPageTest.healthCareSolutionProviderLogoLinkTest(NewsPageTest.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace901416300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace901416300'><pre>java.lang.AssertionError: Website is not currently available in your region or country expected [Myelth Top Healthcare Communicatins Solution Providers] but found [Website is not currently available in your region or country]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.myelth.tests.NewsPageTest.healthCareSolutionProviderLogoLinkTest(NewsPageTest.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.myelth.tests.NewsPageTest@7a8c8dcf</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.sideNavBtn7Test()'><b>sideNavBtn7Test</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td><div><pre>java.lang.AssertionError: Reviews are not displayed expected [true] but found [false]
+	at com.myelth.tests.HomePageTest.sideNavBtn7Test(HomePageTest.java:345)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace765329253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace765329253'><pre>java.lang.AssertionError: Reviews are not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at com.myelth.tests.HomePageTest.sideNavBtn7Test(HomePageTest.java:345)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.sliderImageTest()'><b>sliderImageTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>22</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.footerHomeTest()'><b>footerHomeTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.availableOnAppStoreTest()'><b>availableOnAppStoreTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PlatformPageTest.platformVideoFunctionalityTest()'><b>platformVideoFunctionalityTest</b><br>Test class: com.myelth.tests.PlatformPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.myelth.tests.PlatformPageTest@fbd1f6</td></tr>
+<tr>
+<td title='com.myelth.tests.BlogPageTest.readMoreBtnTest3()'><b>readMoreBtnTest3</b><br>Test class: com.myelth.tests.BlogPageTest</td>
+<td></td>
+<td>2</td>
+<td>com.myelth.tests.BlogPageTest@5dda768f</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.sliderDotsTest()'><b>sliderDotsTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.certificationsImageTest()'><b>certificationsImageTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.faqsTest()'><b>faqsTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.TermsOfServicePageTest.twentyYearsOfPriceChangesInTheUnitedStatesTest()'><b>twentyYearsOfPriceChangesInTheUnitedStatesTest</b><br>Test class: com.myelth.tests.TermsOfServicePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.TermsOfServicePageTest@55fe41ea</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.TermsAndConditionsTest()'><b>TermsAndConditionsTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.facebookDisplayTest()'><b>facebookDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.LogoTest()'><b>LogoTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PayersPageTest.contactUsButtonDisplayTest()'><b>contactUsButtonDisplayTest</b><br>Test class: com.myelth.tests.PayersPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.PayersPageTest@24269709</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.videoDisplayTest()'><b>videoDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.FaqsPageTest.contactUsButtonDisplayTest()'><b>contactUsButtonDisplayTest</b><br>Test class: com.myelth.tests.FaqsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.FaqsPageTest@1ce24091</td></tr>
+<tr>
+<td title='com.myelth.tests.Footer_HomePageTest.footerHomeTitleTest()'><b>footerHomeTitleTest</b><br>Test class: com.myelth.tests.Footer_HomePageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.Footer_HomePageTest@ba2f4ec</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.privacyPolicyTextTest()'><b>privacyPolicyTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.accessToRealtimeCoverage_readMoreBtnDisplayTest()'><b>accessToRealtimeCoverage_readMoreBtnDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.ProviderPageTest.contactUsButtonDisplayTest()'><b>contactUsButtonDisplayTest</b><br>Test class: com.myelth.tests.ProviderPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.ProviderPageTest@367ffa75</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.contactUsTextTest()'><b>contactUsTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>17</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.faqsTextTest()'><b>faqsTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PrivacyPolicyPageTest.privacyPolicyTitleTest()'><b>privacyPolicyTitleTest</b><br>Test class: com.myelth.tests.PrivacyPolicyPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.PrivacyPolicyPageTest@2cd76f31</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.earnRewardsAndIncentives_readMoreBtnTest()'><b>earnRewardsAndIncentives_readMoreBtnTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>9</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PrivacyPolicyPageTest.copyRightTest()'><b>copyRightTest</b><br>Test class: com.myelth.tests.PrivacyPolicyPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.PrivacyPolicyPageTest@2cd76f31</td></tr>
+<tr>
+<td title='com.myelth.tests.PayersPageTest.contactUsButtonFucntionalityTest()'><b>contactUsButtonFucntionalityTest</b><br>Test class: com.myelth.tests.PayersPageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.PayersPageTest@24269709</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.aggregateElectronicHealthRecords_readMoreBtnTest()'><b>aggregateElectronicHealthRecords_readMoreBtnTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>18</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.EmployerPageTest.contactUsButtonTest()'><b>contactUsButtonTest</b><br>Test class: com.myelth.tests.EmployerPageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.EmployerPageTest@49438269</td></tr>
+<tr>
+<td title='com.myelth.tests.Footer_HomePageTest.contactUsButtonFunctionalityTest()'><b>contactUsButtonFunctionalityTest</b><br>Test class: com.myelth.tests.Footer_HomePageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.Footer_HomePageTest@ba2f4ec</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.aggregateElectronicHealthRecords_readMoreBtnDisplayTest()'><b>aggregateElectronicHealthRecords_readMoreBtnDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PayersPageTest.payerTitleTest()'><b>payerTitleTest</b><br>Test class: com.myelth.tests.PayersPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.PayersPageTest@24269709</td></tr>
+<tr>
+<td title='com.myelth.tests.TermsOfServicePageTest.searchFunctionalityTest()'><b>searchFunctionalityTest</b><br>Test class: com.myelth.tests.TermsOfServicePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.myelth.tests.TermsOfServicePageTest@55fe41ea</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.shareHealthInformation_readMoreBtnTest()'><b>shareHealthInformation_readMoreBtnTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.ProviderTextTest()'><b>ProviderTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PlatformPageTest.contactUsButtonFunctionalityTest()'><b>contactUsButtonFunctionalityTest</b><br>Test class: com.myelth.tests.PlatformPageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.PlatformPageTest@fbd1f6</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.earnRewardsAndIncentives_readMoreBtnDisplayTest()'><b>earnRewardsAndIncentives_readMoreBtnDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.facebookTest()'><b>facebookTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.accessToRealtimeCoverage_readMoreBtnTest()'><b>accessToRealtimeCoverage_readMoreBtnTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.footerHomeTextTest()'><b>footerHomeTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.PlatformTest()'><b>PlatformTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PlatformPageTest.platformPageTitle()'><b>platformPageTitle</b><br>Test class: com.myelth.tests.PlatformPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.PlatformPageTest@fbd1f6</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.videofunctionalityTest()'><b>videofunctionalityTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.searchForCare_readMoreBtnDiplayTest()'><b>searchForCare_readMoreBtnDiplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.manageEntireFamilysHealth_readMoreBtnTest()'><b>manageEntireFamilysHealth_readMoreBtnTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.GetItOnGooglePlayTest()'><b>GetItOnGooglePlayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.PlatformTextTest()'><b>PlatformTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.AboutUsPageTest.individualProfileTest()'><b>individualProfileTest</b><br>Test class: com.myelth.tests.AboutUsPageTest</td>
+<td></td>
+<td>17</td>
+<td>com.myelth.tests.AboutUsPageTest@2aceadd4</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.manageEntireFamilysHealth_readMoreBtnDisplayTest()'><b>manageEntireFamilysHealth_readMoreBtnDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.certificationsImageDisplayTest()'><b>certificationsImageDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.contactUs_btnTest()'><b>contactUs_btnTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>17</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.NewsTest()'><b>NewsTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.FaqsPageTest.copyRightTest()'><b>copyRightTest</b><br>Test class: com.myelth.tests.FaqsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.FaqsPageTest@1ce24091</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.TermsAndConditionsTextTest()'><b>TermsAndConditionsTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.PayersTest()'><b>PayersTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>4</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.EmployerPageTest.contactUsButtonDisplayTest()'><b>contactUsButtonDisplayTest</b><br>Test class: com.myelth.tests.EmployerPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.EmployerPageTest@49438269</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.HomeTest()'><b>HomeTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.aboutUsTextTest()'><b>aboutUsTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.twitterDisplayTest()'><b>twitterDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.twitterTest()'><b>twitterTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.HomeTextTest()'><b>HomeTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.EmployerPageTest.employerTitleTest()'><b>employerTitleTest</b><br>Test class: com.myelth.tests.EmployerPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.EmployerPageTest@49438269</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.BlogTest()'><b>BlogTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>11</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.PlatformPageTest.contactUsButtonDisplayTest()'><b>contactUsButtonDisplayTest</b><br>Test class: com.myelth.tests.PlatformPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.PlatformPageTest@fbd1f6</td></tr>
+<tr>
+<td title='com.myelth.tests.TermsOfServicePageTest.myElthLaunchesHealthcareCollaborationPlatformTest()'><b>myElthLaunchesHealthcareCollaborationPlatformTest</b><br>Test class: com.myelth.tests.TermsOfServicePageTest</td>
+<td></td>
+<td>6</td>
+<td>com.myelth.tests.TermsOfServicePageTest@55fe41ea</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.contactUs_btnDisplayTest()'><b>contactUs_btnDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.Footer_HomePageTest.contactUsButtonDisplayTest()'><b>contactUsButtonDisplayTest</b><br>Test class: com.myelth.tests.Footer_HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.Footer_HomePageTest@ba2f4ec</td></tr>
+<tr>
+<td title='com.myelth.tests.BlogPageTest.blogTitleTest()'><b>blogTitleTest</b><br>Test class: com.myelth.tests.BlogPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.BlogPageTest@5dda768f</td></tr>
+<tr>
+<td title='com.myelth.tests.FaqsPageTest.FaqsTitleTest()'><b>FaqsTitleTest</b><br>Test class: com.myelth.tests.FaqsPageTest</td>
+<td></td>
+<td>1</td>
+<td>com.myelth.tests.FaqsPageTest@1ce24091</td></tr>
+<tr>
+<td title='com.myelth.tests.BlogPageTest.readMoreBtnTest2()'><b>readMoreBtnTest2</b><br>Test class: com.myelth.tests.BlogPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.BlogPageTest@5dda768f</td></tr>
+<tr>
+<td title='com.myelth.tests.TermsAndConditionsPageTest.termsAndConditionsTitleTest()'><b>termsAndConditionsTitleTest</b><br>Test class: com.myelth.tests.TermsAndConditionsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.TermsAndConditionsPageTest@1c1bbc4e</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.shareHealthInformation_readMoreBtnDisplayTest()'><b>shareHealthInformation_readMoreBtnDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.GetItOnGooglePlayImageTest()'><b>GetItOnGooglePlayImageTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.sliderTextTest()'><b>sliderTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.PayersTextTest()'><b>PayersTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.blogTextTest()'><b>blogTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.NewsPageTest.newsTitleTest()'><b>newsTitleTest</b><br>Test class: com.myelth.tests.NewsPageTest</td>
+<td></td>
+<td>4</td>
+<td>com.myelth.tests.NewsPageTest@7a8c8dcf</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.contactUsTest()'><b>contactUsTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.TermsOfServicePageTest.threeReasonstoVideoCallYourDoctorTest()'><b>threeReasonstoVideoCallYourDoctorTest</b><br>Test class: com.myelth.tests.TermsOfServicePageTest</td>
+<td></td>
+<td>7</td>
+<td>com.myelth.tests.TermsOfServicePageTest@55fe41ea</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.EmployerTextTest()'><b>EmployerTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.ProviderTest()'><b>ProviderTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.FaqsPageTest.contactUsButtonFunctionalityTest()'><b>contactUsButtonFunctionalityTest</b><br>Test class: com.myelth.tests.FaqsPageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.FaqsPageTest@1ce24091</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.sideNavDotsTest()'><b>sideNavDotsTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.EmployerTest()'><b>EmployerTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.NewsPageTest.healthCareTechLinkTest()'><b>healthCareTechLinkTest</b><br>Test class: com.myelth.tests.NewsPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.NewsPageTest@7a8c8dcf</td></tr>
+<tr>
+<td title='com.myelth.tests.ProviderPageTest.providerTitleTest()'><b>providerTitleTest</b><br>Test class: com.myelth.tests.ProviderPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.ProviderPageTest@367ffa75</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.copyRightTest()'><b>copyRightTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.AboutUsPageTest.aboutUsTitleTest()'><b>aboutUsTitleTest</b><br>Test class: com.myelth.tests.AboutUsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.AboutUsPageTest@2aceadd4</td></tr>
+<tr>
+<td title='com.myelth.tests.PlatformPageTest.platformVideoTest()'><b>platformVideoTest</b><br>Test class: com.myelth.tests.PlatformPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.PlatformPageTest@fbd1f6</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.aboutUsTest()'><b>aboutUsTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.searchForCare_readMoreBtnTest()'><b>searchForCare_readMoreBtnTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>5</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.BlogPageTest.readMoreBtnTest1()'><b>readMoreBtnTest1</b><br>Test class: com.myelth.tests.BlogPageTest</td>
+<td></td>
+<td>3</td>
+<td>com.myelth.tests.BlogPageTest@5dda768f</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.privacyPolicyTest()'><b>privacyPolicyTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>2</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.availableOnAppStoreImageTest()'><b>availableOnAppStoreImageTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.instagramDisplayTest()'><b>instagramDisplayTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.HomePageTest.NewsTextTest()'><b>NewsTextTest</b><br>Test class: com.myelth.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.HomePageTest@7e6f74c</td></tr>
+<tr>
+<td title='com.myelth.tests.TermsAndConditionsPageTest.copyRightTest()'><b>copyRightTest</b><br>Test class: com.myelth.tests.TermsAndConditionsPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.myelth.tests.TermsAndConditionsPageTest@1c1bbc4e</td></tr>
+<tr>
+<td title='com.myelth.tests.ProviderPageTest.contactUsButtonFunctionalityTest()'><b>contactUsButtonFunctionalityTest</b><br>Test class: com.myelth.tests.ProviderPageTest</td>
+<td></td>
+<td>16</td>
+<td>com.myelth.tests.ProviderPageTest@367ffa75</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myelth.tests.ContactUsPageTest.contactUsTitleTest()'><b>contactUsTitleTest</b><br>Test class: com.myelth.tests.ContactUsPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-9AGJIQ9K&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c928bc481be372d5cb3a9e5adf218b55, get {url=https://myelth.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65178/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c928bc481be372d5cb3a9e5adf218b55
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
+	at com.myelth.tests.ContactUsPageTest.setUp(ContactUsPageTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 44 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1368316270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1368316270'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-9AGJIQ9K&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c928bc481be372d5cb3a9e5adf218b55, get {url=https://myelth.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65178/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c928bc481be372d5cb3a9e5adf218b55
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
+	at com.myelth.tests.ContactUsPageTest.setUp(ContactUsPageTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 44 more
+</pre></div></td>
+<td>0</td>
+<td>com.myelth.tests.ContactUsPageTest@24aed80c</td></tr>
+<tr>
+<td title='com.myelth.tests.ContactUsPageTest.userDetails()'><b>userDetails</b><br>Test class: com.myelth.tests.ContactUsPageTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-9AGJIQ9K&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c928bc481be372d5cb3a9e5adf218b55, get {url=https://myelth.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65178/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c928bc481be372d5cb3a9e5adf218b55
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
+	at com.myelth.tests.ContactUsPageTest.setUp(ContactUsPageTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 44 more
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1178302739", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1178302739'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;LAPTOP-9AGJIQ9K&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c928bc481be372d5cb3a9e5adf218b55, get {url=https://myelth.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\kumar\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65178/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c928bc481be372d5cb3a9e5adf218b55
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
+	at com.myelth.tests.ContactUsPageTest.setUp(ContactUsPageTest.java:31)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+	... 44 more
+</pre></div></td>
+<td>0</td>
+<td>com.myelth.tests.ContactUsPageTest@24aed80c</td></tr>
+</table><p>
+</body>
+</html>
